@@ -85,13 +85,17 @@ class Agent {
             var initData = JSON.parse(log.load("proxies.json"));
             for(var i=0;i<initData.length;i++) await Agent.docProxy(initData[i]);
         } else {
-            log.i("refreshing of",proxies.collectionName);
-            await Mongo.indexCreate({active:1,runs:1,lastRun:1},proxies);
-            var initData = JSON.parse(log.load("proxies.json"));
-            var docs = (await proxies.find().toArray()).map((doc)=>{return doc._id});
-            for(var i=0;i<initData.length;i++)
-                if (docs.indexOf(initData[i]._id)<0)
-                    await Agent.docProxy(initData[i]);
+            try {
+                log.i("refreshing of",proxies.collectionName);
+                await Mongo.indexCreate({active:1,runs:1,lastRun:1},proxies);
+                var initData = JSON.parse(log.load("proxies.json"));
+                var docs = (await proxies.find().toArray()).map((doc)=>{return doc._id});
+                for(var i=0;i<initData.length;i++)
+                    if (docs.indexOf(initData[i]._id)<0)
+                        await Agent.docProxy(initData[i]);
+            } catch(e) {
+                log.i("no proxies.json file found, skipping refresh");
+            }
         }
         // --------------------------------------------------------------------------------------------------------------------- ⏺ reset
         log.i("resetting inconsistent states");
