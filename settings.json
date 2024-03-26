@@ -1,0 +1,72 @@
+[
+  {
+    "name": "PROXY_USERNAME",
+    "value": "CY4",
+    "slotSetting": false
+  },
+  {
+    "name": "PROXY_PASSWORD",
+    "value": "CY4",
+    "slotSetting": false
+  },
+  {
+    "name": "MONGO_DATABASE_CONNECTION_STRING",
+    "value": "mongodb+srv://CY4:CY4CY4@osint.7b2rd.mongodb.net/",
+    "slotSetting": false
+  },
+  {
+    "name": "MONGO_DATABASE_ENVIRONMENT_NAME",
+    "value": "CY4",
+    "slotSetting": false
+  },
+  {
+    "name": "WAIT_PARALLEL_TASK_START",
+    "value": "1000",
+    "slotSetting": false
+  },
+  {
+    "name": "PORT",
+    "value": "8080",
+    "slotSetting": false
+  },
+  {
+    "name": "PARALLELISM",
+    "value": "32",
+    "slotSetting": false
+  },
+  {
+    "name": "LOG_LEVEL",
+    "value": "0",
+    "slotSetting": false
+  },
+  {
+    "name": "ORA_SDTZ",
+    "value": "Europe/Rome",
+    "slotSetting": false
+  },
+  {
+    "name": "TZ",
+    "value": "Europe/Rome",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_TIME_ZONE",
+    "value": "Europe/Rome",
+    "slotSetting": false
+  },
+  {
+    "name": "AGENT_MAX_LOCK_TIME_MS",
+    "value": "60000",
+    "slotSetting": false   
+  },
+  {
+    "name": "AGENT_WAIT_LOCK_TIME_MS",
+    "value": "1500",
+    "slotSetting": false   
+  },
+  {
+    "name": "TRACE_ACTIONS",
+    "value": "true",
+    "slotSetting": false   
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "noctua-frog",
+  "version": "1.0.0",
+  "description": "noctua-mixed-proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabio Gatto (fabio.gatto@live.it)",
+  "license": "ISC",
+  "dependencies": {
+    "istextorbinary": "^6.0.0",
+    "noctua-html2json": "^1.0.3",
+    "noctua-log": "^1.0.0",
+    "noctua-mitm": "^1.0.0",
+    "noctua-mongo": "^1.0.1",
+    "parse-multipart-data": "^1.5.0",
+    "proxy-agent": "^5.0.0",
+    "urldecode": "^1.0.1"
+  }
+}
