@@ -1,4 +1,4 @@
 #!/bin/bash
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$PATH;
-cd /home/@/xxx;
+cd /home/@/cy4-fase0;
 node index.js > ../log.txt &
